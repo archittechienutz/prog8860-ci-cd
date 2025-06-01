@@ -12,7 +12,7 @@ class FlaskAppTests(unittest.TestCase):
 
     def test_home_content(self):
         response = self.client.get('/')
-        self.assertEqual(response.data.decode(), "Hello from Flask!")
+        self.assertEqual(response.data.decode(), "Hello, CI/CD World!")
 
     def test_invalid_route(self):
         response = self.client.get('/invalid')
